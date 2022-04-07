@@ -1,0 +1,28 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+#hero {
+  width: 592px;
+  margin: auto;
+}
+h1 {
+  font-family: 'Padauk', sans-serif; 
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: normal;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+span, a {
+  color: #FF9900;
+}
+
+p {
+  color: #7D7987;
+}
+
+  
