@@ -7,7 +7,7 @@ body {
 }
 
 .page {
-  margin: 10px 20px;
+  margin: 10px 20px 0px -0px;
   padding-top: 380px;  
 }
 
@@ -53,11 +53,11 @@ main {
   align-items:center;
   justify-content: space-between;
   margin: 0px;
-  padding: 0px;
+  padding: 0px 15px 0px 0px;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 43px;
   line-height: 1.2em;
   color: #FFFFFF;
   font-weight: normal;
@@ -70,7 +70,7 @@ span {
 }
 
 section, p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.3em;
   text-align: justify;
   color: #dad7e2;
@@ -92,6 +92,9 @@ footer a {
   font-weight: bold;
 }
 
+footer p {
+  font-size: 16px;
+}
 .line {
   width: 568px;
   height: 0px;
@@ -102,6 +105,6 @@ footer a {
 
 #padlok {
  left: 30px;
- margin: 30px;
+ margin: 0px;
  position: static;
 }
