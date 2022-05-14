@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, button, select, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+body { font-family: 'Poppins', sans-serif;
+  background: #EFEFEF;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  min-height: 386px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #000000;
+}
+
+.page {
+  width: 750px;
+  height: 1440px;
+  margin: 90px auto;
+}
+
+header {
+  width: 400px;
+  margin-top: 80px;
+  
+}
+
+header h1 { 
+  font-family: 'Staatliches', cursive;
+  font-size: bold;
+  line-height: 40px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #EFEFEF;
+}
+
+header p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #EFEFEF;
+  margin-bottom: 40px;
+}
+
+form { 
+  margin-top: 80px;
+  background: #FFFFFF;
+  min-height: 320px;
+  border-radius: 8px 8px 0 0;
+  padding: 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 26px
+}
+
+fieldset legend {
+  font-family: 'Staatliches';
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 600;
+  width: 100%;
+  border-bottom: 1px solid #E6E6F0; 
+  padding-bottom: 18px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  line-height: 24px;
+  color: #4E4958;
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 12px;
+  font-size: 0.7rem;
+  line-height: 20px;
+  color: #A9A7Af;
+ }
+
+ .input-wrapper label span:hover {
+   color: #6C6A71;  /*acessibilidade */
+ } 
+
+ .input-wrapper input, .input-wrapper textarea {
+   background: #FAFAFC;
+   border: #E6E6F0;
+   border-radius: 8px;
+   height: 56px;
+   font-size: 0.8rem;
+   line-height: 28px;
+   padding: 0 24xp;
+   color: #6C6A71;
+  }
+  
+  .input-wrapper textarea {
+    padding: 0;
+    height: 170px;
+  }
+
+  .col-3 {
+    display: flex;
+    gap: 20px;
+  }
+
+  .col-3 > div:nth-child(1) {
+    width: 100%;
+  }
+
+  footer {
+    background: #000000;
+    height: 160px; 
+    display: flex;
+    flex-direction: column;
+    padding: 54px 65px;
+    margin-bottom: 80px;
+    border-top: 1 px solid#E6E6F0;
+    border-radius: 0 0 8px 8px;
+
+    
+  }
+
+  footer .button {
+    height: 50px;
+    color: #EFEFEF;
+    background: #FF5354;
+    border: 0; 
+    border-radius: 12px;
+    font-size: 0.8rem;
+    line-height: 28px;
+    font-weight: bold;
+  }
+
+  footer .button:hover {
+    background: #9b1212;
+  }
+
+  input:invalid {
+    border: 1px solid red;
+  }
