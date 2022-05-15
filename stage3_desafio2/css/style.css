@@ -70,6 +70,14 @@ header h1:hover {
   transform: rotate(360deg);
 }
 
+.saida {
+  background: #29d;
+  padding: 20px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
 
 img {
   width: 100%;
