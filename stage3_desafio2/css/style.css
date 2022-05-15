@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62,5%; /* 10px */
+}
+
+body {
+  font-family: 'Palanquin';
+  background: #E5E5E5;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  list-style: 2rem;
+  padding: 0 2.7rem 3.7rem;
+}
+
+h1 {
+  font-family: 'Staatliches';
+  color: #04371d;
+}
+
