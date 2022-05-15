@@ -6,11 +6,24 @@
 
 :root {
   font-size: 62,5%; /* 10px */
+
+  --ff--font1: 'Palanquin';
+  --ff--font2: 'Staatliches';
+  --ff--font3: 'Roboto', sans-serif;
+
+  --fs--body: 1.4rem;
+  --fs--heading: 2rem;
+  --fs--body: 2rem;
+
+  --fg--cor1: #E5E5E5;
+  --fc--cor2: #04371d;
+  --fc--cor3: hsl#408d65b2;
+    
 }
 
 body {
-  font-family: 'Palanquin';
-  background: #E5E5E5;
+  font-family: var(--ff--font1);
+  background: var(--fg--cor1);
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 700;
@@ -18,8 +31,30 @@ body {
   padding: 0 2.7rem 3.7rem;
 }
 
-h1 {
-  font-family: 'Staatliches';
-  color: #04371d;
+header {
+  text-align: center;
+  font-size: var(--fs--heading);
 }
 
+header p {
+  font-family: var(--ff--font3);
+  color: var(--fc--cor3);
+  font-weight: bold;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+ header h1 {
+ font-family: var(--ff--font2);
+ color: var(--fc--cor2);
+ line-height: 3.8rem;
+ letter-spacing: 2px;
+ margin-bottom: 2rem;
+} 
+
+
+img {
+  width: 100%;
+  height: auto;
+
+}
