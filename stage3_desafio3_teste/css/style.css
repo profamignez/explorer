@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62,5%; /* 10px */
+
+  --ff--font1: 'Palanquin';
+  --ff--font2: 'Staatliches';
+  --ff--font3: 'Roboto', sans-serif;
+
+  --fs--body: 1rem;
+ 
+  --fg--cor1: #E5E5E5;
+  --fc--cor2: #04371d;
+  --fc--cor3: hsl#408d65b2;
+  --fb--cor4: #FFFFFF;
+  --fc--cor5: black;
+   
+}
+
+body {
+  font-family: var(--ff--font1);
+  background: var(--fg--cor1);
+  font-weight: 700;
+  list-style: 2rem;
+  padding: 0 2.7rem 3.7rem;
+}
+
+main {
+  display: grid;
+  gap: 1.8rem;
+  animation:  downtop 700ms 300ms backwards;
+  grid-template-areas: 
+  "card-1 card card card"
+  "card-1 card card card";
+}
+
+
+img {
+  width: 100%;
+  height: 72rem;
+
+}
+.card {
+  position: relative;
+}
+
+.card img {
+  max-width: 300px;
+  min-width: 250px;
+  height: 320px;
+  object-fit: cover; /* encaixar img no box */
+  border-radius: 8px;
+  transition: transform 200ms;
+  grid-area: card;
+  grid-row: card;
+  }
+
+.card-1 {
+  height: 20rem;
+  width: 100%;
+  border-radius: 8px;
+  font-family: var(--ff--font1);
+  background: #5a5c5f;
+  color: var(--fb--cor4);
+  font-size: var(--fs--body);
+  font-weight: 600;
+  text-align: justify;
+  line-height: 1rem;
+  /* display: flex; */
+  /*flex-direction: column; */
+  padding: 1.4rem 1.4rem;
+  grid-area: card-1;
+  grid-column: card-1;
+  
+}
+
+.card img:hover {
+ transform: scale(1.1);
+ opacity: 0.4;
+}
+
+.card p {
+  position: absolute;
+  bottom: 1.5rem;
+  font-family: var(--ff--font2);
+  text-transform: uppercase;
+  color: var(--fb--cor4);
+  line-height: 3.0rem;
+  font-size: 1.8rem;
+  left: 2.2rem;
+  padding: 0  auto 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+} 
+
+.card p span {
+  border-radius: 2rem;
+  background-color: var(--fb--cor4);
+  color: var(--fc--cor5);
+  font-size: var(--fs--body);
+  font-weight: 400;
+  width: fit-content;
+  height: 2rem;
+  padding: 0 1.2rem;
+  display: inline-flex;
+  align-items: center;
+ 
+}
+
+.card h1 {
+  font-family: var(--ff--font2) ;
+  text-transform: uppercase;
+  color: var(--fc--cor2);
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
