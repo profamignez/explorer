@@ -16,18 +16,23 @@ Substitua o "x" da mensagem, pelo número de tentativas
 
 */
 
-const result = prompt("Advinhe o número que estou pensando? Está entre 0 e 10")
+let result = prompt("Advinhe o número que estou pensando? Está entre 0 e 10")
+
+const randomNumber = Math.round(Math.random() * 10)
+
+let xAttempts = 1;
+
+while(Number(result) != randomNumber) {
+  result = prompt("Erro, tente novamente:")
+  xAttempts++
+}
+
+alert(`Parabéns! Você adivinhou o número em ${xAttempts} tentantivas`)
+
 
 /*
 Math.ceil(Math.random() * 10) Arredonda para cima
 
 Math.round(Math.random() * 10) Arredonda para cima ou baixo.
 */
-
-const randomNumber = Math.round(Math.random() * 10)
-const match = Number(result) == randomNumber
-
-console.log(result, randomNumber, match)
-
-
 

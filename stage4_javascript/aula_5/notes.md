@@ -16,3 +16,4 @@
 - Math.round() - Math.ceil() - Math.floor()
 [] console
 - Pacote com funcionalidades para o console do devtools (browser) 
+[] template literals ou template strings
