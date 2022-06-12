@@ -45,14 +45,30 @@ for(let index = 0; index < patients.length; index++)
     patientsNames[index] = patients[index].name
 }
 
+//função para o cálculo do IMC
+
+function IMC(weight, height) {
+    return (weight / ((height / 100) ** 2)).toFixed(2)
+}
+
+/*
+function printPatientIMC(patient) {
+    return `
+        Paciente ${patient.name} possui o IMC de: 
+   ${(patient.weight / ((patient.height / 100) ** 2)).toFixed(2)}
+` 
+}
+
+*/
 
 function printPatientIMC(patient) {
     return `
         Paciente ${patient.name} possui o IMC de: 
-    ${(patient.weight / ((patient.height / 100) ** 2)).toFixed(2)}
+   ${IMC(patient.weight, patient.height)}
 ` 
 }
 
+// Nome e o IMC do paciente
 for (let patient of patients) {
     let IMCmessage = printPatientIMC(patient)
     alert(IMCmessage)
