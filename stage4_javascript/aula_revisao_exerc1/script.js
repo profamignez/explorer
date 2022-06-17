@@ -29,14 +29,14 @@ alert("Multiplicação: " + multi)
 alert("Divisão: " + div)
 alert("Resto da Divisão: " + restDiv)
 
-const sum2 = (firstNumber + secondNumber) / 2
+const sum2 = ((firstNumber + secondNumber) % 2 == 0)
 
 let result = sum2
 
 if (result) {
-  alert ("Esse número é: " + sum2 + "par")
+  alert ("Esse número é: " + sum2 + " par")
 } else {
-  alert ("Esse número é: " + sum2 + "impar")
+  alert ("Esse número é: " + sum2 + " impar")
 
 }
 
