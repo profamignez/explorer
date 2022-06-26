@@ -48,9 +48,9 @@ img {
   position: relative;
 }
 
-.card img {
-  max-width: 300px;
-  min-width: 250px;
+.card img, .card-1 img {
+  max-width: 290px;
+  min-width: 240px;
   height: 320px;
   object-fit: cover; /* encaixar img no box */
   border-radius: 8px;
@@ -59,17 +59,12 @@ img {
   grid-row: card;
   }
 
-.card-1 {
+.card-1 img {
   height: 20rem;
   width: 100%;
   border-radius: 8px;
-  font-family: var(--ff--font1);
-  background: #5a5c5f;
   color: var(--fb--cor4);
-  font-size: var(--fs--body);
-  font-weight: 600;
-  text-align: justify;
-  line-height: 1rem;
+  line-height: 1.2rem;
   /* display: flex; */
   /*flex-direction: column; */
   padding: 1.4rem 1.4rem;
@@ -78,7 +73,14 @@ img {
   
 }
 
-.card img:hover {
+.card-1 p {
+  text-align: justify;
+  border-radius: 8px;
+  background-color: #b9c3d1;
+  font-family: var(--ff--font1);
+   
+}
+.card img:hover, .card-1 p:hover  {
  transform: scale(1.1);
  opacity: 0.4;
 }
