@@ -4,6 +4,10 @@
 //Refatoração: mudar um código para deixá-lo mais compreensível
 //SEM ALTERAR suas funcionalídades
 
+//EcmaScript - ES6 Modules
+import resetControls from "./controls.js"
+import "./timer.js"
+
 const buttonPlay = document.querySelector('.play')
 const buttonPause = document.querySelector('.pause')
 const buttonStop = document.querySelector('.stop')
@@ -33,12 +37,10 @@ function countdown(){
 
     updateTimerDisplay(minutes, 0)
 
-
     if(minutes <= 0) {
       resetControls() 
             return
   }
-
 
   if (seconds <= 0) {
     seconds = 2
@@ -46,7 +48,6 @@ function countdown(){
   }  
 
 // minutesDisplay.textContent = String(minutes - 1).pad.Start(2, "0")
-  
   
   updateTimerDisplay(minutes, String(seconds - 1))
   
