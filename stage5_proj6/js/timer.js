@@ -3,6 +3,12 @@ function updateTimerDisplay(minutes, seconds) {
   secondsDisplay.textContent = String(seconds).padStart(2, "0")
 }
 
+function resetTimer( ) {
+  updateTimerDisplay(minutes, 0)
+  clearTimeout(timerTimeOut)
+}
+
+
 function countdown(){
   setTimeout(function() {
     let seconds = Number(secondsDisplay.textContent)
@@ -29,3 +35,6 @@ function countdown(){
     countdown()
     }, 1000)
 }
+
+
+console.log('timer')
