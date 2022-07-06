@@ -10,7 +10,7 @@ function resetTimer( ) {
 
 
 function countdown(){
-  setTimeout(function() {
+  timerTimeOut = setTimeout(function() {
     let seconds = Number(secondsDisplay.textContent)
     let minutes = Number(minutesDisplay.textContent)
 
@@ -24,7 +24,7 @@ function countdown(){
 
 
   if (seconds <= 0) {
-    seconds = 2
+    seconds = 3
     --minutes
   }  
 
@@ -36,5 +36,5 @@ function countdown(){
     }, 1000)
 }
 
-
-console.log('timer')
+//named export
+export { countdown, resetTimer }

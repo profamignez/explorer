@@ -5,8 +5,11 @@
 //SEM ALTERAR suas funcionalídades
 
 //EcmaScript - ES6 Modules
+//default import
 import resetControls from "./controls.js"
-import "./timer.js"
+
+//named import
+import { countdown, resetTimer} from "./timer.js"
 
 const buttonPlay = document.querySelector('.play')
 const buttonPause = document.querySelector('.pause')
@@ -57,8 +60,7 @@ buttonSoundOn.addEventListener('click', function() {
 
 buttonSet.addEventListener('click', function() {
  let newMinutes = prompt('Quantos minutos?')
-
-  if(!newMinutes) {
+   if(!newMinutes) {
     resetTimer()
     return
   }
